@@ -1,7 +1,8 @@
-package com.curlybraces.shoppinglistm
+package com.curlybraces.shoppinglistm.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.curlybraces.shoppinglistm.data.db.entities.ShoppingItem
 
 @Dao
 interface ShoppingDao {

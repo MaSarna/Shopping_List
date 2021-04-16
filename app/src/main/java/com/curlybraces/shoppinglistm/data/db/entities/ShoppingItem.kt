@@ -1,4 +1,4 @@
-package com.curlybraces.shoppinglistm
+package com.curlybraces.shoppinglistm.data.db.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

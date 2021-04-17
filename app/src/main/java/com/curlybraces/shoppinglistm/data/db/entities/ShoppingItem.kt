@@ -10,9 +10,9 @@ data class ShoppingItem(
     var name: String,
     @ColumnInfo(name = "item_amount")
     var amount: Int,
-    @ColumnInfo(name = "item_Timestamp")
+    @ColumnInfo(name = "item_timestamp")
     var itemTimestamp: Long,
-    @ColumnInfo(name = "shopping_List_Id")
+    @ColumnInfo(name = "shopping_list_id")
     var shoppingListId: Long
 ) {
     @PrimaryKey(autoGenerate = true)

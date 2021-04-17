@@ -5,10 +5,11 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.curlybraces.shoppinglistm.data.db.entities.ShoppingItem
+import com.curlybraces.shoppinglistm.data.db.entities.ShoppingList
 
 @Database(
-    entities = [ShoppingItem::class],
-    version = 1
+    entities = [ShoppingList::class, ShoppingItem::class],
+    version = 2
 )
 abstract class ShoppingDatabase: RoomDatabase() {
 

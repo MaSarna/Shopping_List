@@ -8,8 +8,10 @@ import androidx.room.PrimaryKey
 class ShoppingList(
     @ColumnInfo(name = "shopping_list_name")
     var shoppingListName: String,
+
     @ColumnInfo(name = "shopping_list_timestamp")
     var shoppingListTimestamp: Long,
+
     @ColumnInfo(name = "is_archived")
     var isArchived: Boolean
 ) {

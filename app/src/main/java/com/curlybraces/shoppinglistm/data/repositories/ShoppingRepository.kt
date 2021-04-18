@@ -15,5 +15,9 @@ class ShoppingRepository(
 
     suspend fun delete(item: ShoppingItem) = db.getShoppingDao().delete(item)
 
+    fun getCurrentShoppingList() = db.getShoppingDao().getCurrentShoppingList()
+
+    fun getArchivedShoppingList() = db.getShoppingDao().getArchivedShoppingList()
+
     fun getAllShoppingItems() = db.getShoppingDao().getAllShoppingItems()
 }

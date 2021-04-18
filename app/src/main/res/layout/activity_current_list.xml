@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".ui.shoppinglist.ShoppingActivity">
+    tools:context=".ui.shoppinglist.ShoppingListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvShoppingItems"
+        android:id="@+id/rvShoppingList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="54dp"

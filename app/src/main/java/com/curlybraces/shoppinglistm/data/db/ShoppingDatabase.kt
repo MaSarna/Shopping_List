@@ -11,7 +11,7 @@ import com.curlybraces.shoppinglistm.data.db.entities.ShoppingList
     entities = [ShoppingList::class, ShoppingItem::class],
     version = 2
 )
-abstract class ShoppingDatabase: RoomDatabase() {
+abstract class ShoppingDatabase : RoomDatabase() {
 
     abstract fun getShoppingDao(): ShoppingDao
 
@@ -25,7 +25,9 @@ abstract class ShoppingDatabase: RoomDatabase() {
         }
 
         private fun createDatabase(context: Context) =
-            Room.databaseBuilder(context.applicationContext,
-                ShoppingDatabase::class.java,"ShoppingDB.db").build()
+            Room.databaseBuilder(
+                context.applicationContext,
+                ShoppingDatabase::class.java, "ShoppingDB.db"
+            ).build()
     }
 }

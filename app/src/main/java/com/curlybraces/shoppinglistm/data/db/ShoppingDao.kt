@@ -26,6 +26,6 @@ interface ShoppingDao {
     @Query("SELECT * FROM shopping_list WHERE is_archived IS 1 ORDER BY shopping_list_timestamp DESC")
     fun getArchivedShoppingList(): LiveData<List<ShoppingList>>
 
-    @Query("SELECT * FROM shopping_items")
+    @Query("SELECT * FROM shopping_items ORDER BY item_timestamp DESC")
     fun getAllShoppingItems(): LiveData<List<ShoppingItem>>
 }

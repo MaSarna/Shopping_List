@@ -1,2 +1,6 @@
 # Shopping_List
-ShoppingList project.
+ShoppingList project - IN PROGRESS. 
+
+~Kotlin
+~RoomDB
+~MVVM

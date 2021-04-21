@@ -42,4 +42,14 @@
         app:layout_constraintStart_toEndOf="@+id/ivList"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/titleShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of items"
+        app:layout_constraintBottom_toBottomOf="@+id/rvShoppingItems"
+        app:layout_constraintEnd_toEndOf="@+id/rvShoppingItems"
+        app:layout_constraintStart_toStartOf="@+id/rvShoppingItems"
+        app:layout_constraintTop_toTopOf="@+id/rvShoppingItems" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

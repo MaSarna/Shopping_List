@@ -14,9 +14,6 @@ data class ShoppingItem(
 
     @ColumnInfo(name = "item_timestamp")
     var itemTimestamp: Long,
-
-    @ColumnInfo(name = "shopping_list_id")
-    var shoppingListId: Long
 ) {
 
     @PrimaryKey(autoGenerate = true)
